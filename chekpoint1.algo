@@ -1,0 +1,31 @@
+ALGORITHM algorithm_chekpoint
+VAR
+    nbrchar: INTEGER:=0;
+    nbrwords: INTEGER:=0;
+    nbrvoy: INTEGER:=0;
+    sentence: STRING;
+   
+
+BEGIN
+// missing function to write a sentence
+write ("enter your string"); 
+read (sentence);
+    FOR i FROM 0 TO i< sentence.lenght-1 STEP 1  DO
+    IF (sentence[i] <> "") THEN
+        nbrchar:=nbrchar+1;
+    END_IF
+    IF (sentence[i]= "a" OR sentence[i]= "e" OR sentence[i]= "i" OR sentence[i]= "o" OR sentence[i]= "w" OR sentence[i]= "y")  THEN
+        nvrvoy := nbrvoy+1;
+        
+    END_IF 
+    IF (sentence[i] = "") THEN
+        nbrwords:= nbrwords+1;
+    END_IF
+    END_FOR
+
+print (nbrchar);
+print (nbrvoy); 
+print (nbrwords);
+ 
+END
+
